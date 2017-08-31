@@ -10,7 +10,7 @@ This application performs sms classification using Weka and Play framework
 
 ## Running
 
-Run this using [sbt](http://www.scala-sbt.org/).
+Run Development server using [sbt](http://www.scala-sbt.org/).
 
 ```
 sbt run
