@@ -18,20 +18,6 @@ sbt run
 
 And then go to http://localhost:9000 to see the running web application.
 
-## Classifiers
-
-- WekaClassifier.java
-
-  Performs data loading,transformation, factorization, classifier building,classifier evaluation and prediction
-
-## Controllers
-
-
-- ClassificationController.java:
-
-  Handles classification and Prediction using WekaClassifier.
-
-
 ## Endpoints
 
 - /train (GET)
@@ -47,4 +33,20 @@ And then go to http://localhost:9000 to see the running web application.
    URL Param: message=[message to be classified]
 
    Performs classification of message
+
+
+## Classifiers
+
+- WekaClassifier.java
+
+  Performs data loading,transformation, factorization, classifier building,classifier evaluation and prediction
+
+## Controllers
+
+
+- ClassificationController.java:
+
+  Handles classification and Prediction using WekaClassifier.
+
+
 
