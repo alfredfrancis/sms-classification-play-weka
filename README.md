@@ -32,13 +32,7 @@ And then go to http://localhost:9000 to see the running web application.
   Handles classification and Prediction using WekaClassifier.
 
 
-## Components
-
-- Module.java:
-
-  Shows how to use Guice to bind all the components needed by your application.
-
-## endpoints
+## Endpoints
 
 - /train (GET)
 
