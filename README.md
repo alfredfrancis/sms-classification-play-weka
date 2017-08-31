@@ -41,11 +41,14 @@ And then go to http://localhost:9000 to see the running web application.
 ## endpoints
 
 - /train (GET)
-    performs training on the training dataset
+
+   performs training on the training dataset
 
 - /evaluate (GET)
-    performs evaluation of the classifier using test data set
+
+   performs evaluation of the classifier using test data set
 
 - /predict (GET) - query string message = <message to be classified>
-    Performs classifcation of message
+
+   Performs classifcation of message
 
