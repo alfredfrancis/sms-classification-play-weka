@@ -18,14 +18,24 @@ public class ClassificationController extends Controller {
     private boolean trained;
 
     ClassificationController() {
+        //flag to check whether classifier trained or not
         trained = false;
+
+        //initialize Classifier object
         classifier = new WekaClassifier();
     }
 
+    /**
+     * displays list of avilable endpoints
+     */
     public Result index(){
         return ok(index.render());
     }
 
+
+    /**
+     * calls transform,fit then stores the model
+     */
     public Result train() {
         Map<String, String> result = new HashMap<>();
         try{
@@ -46,6 +56,10 @@ public class ClassificationController extends Controller {
         return internalServerError(Json.toJson(result));
     }
 
+
+    /**
+     * calls evaluation method and display result
+     */
     public Result evaluate() {
         Map<String, String> result = new HashMap<>();
         try{
@@ -73,6 +87,9 @@ public class ClassificationController extends Controller {
         return internalServerError(Json.toJson(result));
     }
 
+    /**
+     * calls predict function
+     */
     public Result predict() {
 
 
