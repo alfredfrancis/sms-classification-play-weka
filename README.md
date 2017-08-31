@@ -48,7 +48,9 @@ And then go to http://localhost:9000 to see the running web application.
 
    performs evaluation of the classifier using test data set
 
-- /predict (GET) - query string message = <message to be classified>
+- /predict (GET)
 
-   Performs classifcation of message
+   URL Param: message=[message to be classified]
+
+   Performs classification of message
 
